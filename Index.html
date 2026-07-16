@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi, I'm [Your Name]</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background: linear-gradient(135deg, #c8f0d8, #a8e0c8, #d4f0e2);
+      font-family: 'Fredoka', system-ui, sans-serif;
+      min-height: 100vh;
+    }
+    
+    .notepad {
+      background: #fffdf0;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+                  6px 6px 0 #e5e7eb;
+      position: relative;
+      border: 3px solid #f1e4c4;
+    }
+    
+    .notepad::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        transparent 0px,
+        transparent 28px,
+        #f8f1d9 28px,
+        #f8f1d9 29px
+      );
+      opacity: 0.65;
+      pointer-events: none;
+      border-radius: 8px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="pb-12">
+
+  <!-- Header -->
+  <header class="text-center py-16 px-6">
+    <div class="max-w-lg mx-auto">
+      <h1 class="text-6xl font-bold text-emerald-800 mb-3 drop-shadow-sm">[Your Preferred Name]</h1>
+      <p class="text-3xl text-emerald-700">Pronouns: <span class="font-medium">[they/them]</span></p>
+      <p class="mt-6 text-xl text-emerald-600 max-w-md mx-auto">Your short welcome / vibe line here ✨</p>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-6 space-y-12">
+
+    <!-- Likes -->
+    <div class="notepad rounded-3xl p-9 max-w-2xl mx-auto">
+      <h2 class="text-4xl font-bold text-emerald-800 mb-6">👍 Things I Like</h2>
+      <ul class="space-y-4 text-xl text-gray-700">
+        <li>• [Your first like]</li>
+        <li>• [Your second like]</li>
+        <li>• [Your third like]</li>
+      </ul>
+    </div>
+
+    <!-- Dislikes -->
+    <div class="notepad rounded-3xl p-9 max-w-2xl mx-auto">
+      <h2 class="text-4xl font-bold text-emerald-800 mb-6">👎 Things I Dislike</h2>
+      <ul class="space-y-4 text-xl text-gray-700">
+        <li>• [Your first dislike]</li>
+        <li>• [Your second dislike]</li>
+        <li>• [Your third dislike]</li>
+      </ul>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="notepad rounded-3xl p-9">
+      <h2 class="text-4xl font-bold text-emerald-800 mb-8">Current Hobbies</h2>
+      <div class="grid sm:grid-cols-2 gap-8">
+        <div class="bg-white/80 rounded-2xl p-6 border border-emerald-100">
+          <h3 class="font-bold text-2xl text-emerald-700 mb-2">[Hobby 1]</h3>
+          <p class="text-gray-600">Short description of why you're loving it lately.</p>
+        </div>
+        <div class="bg-white/80 rounded-2xl p-6 border border-emerald-100">
+          <h3 class="font-bold text-2xl text-emerald-700 mb-2">[Hobby 2]</h3>
+          <p class="text-gray-600">Short description...</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-center text-emerald-700/70 mt-20 py-8 text-lg">
+    Made with ❤️ • [Your Name] 2026
+  </footer>
+
+</body>
+</html>
