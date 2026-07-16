@@ -12,6 +12,28 @@
       background: linear-gradient(135deg, #c8f0d8, #a8e0c8, #d4f0e2);
       font-family: 'Fredoka', system-ui, sans-serif;
       min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Cute floating frogs */
+    .frog {
+      position: absolute;
+      font-size: 2.5rem;
+      opacity: 0.15;
+      pointer-events: none;
+      animation: float 25s infinite linear;
+      z-index: -1;
+    }
+
+    .frog:nth-child(2) { animation-delay: -5s; font-size: 2rem; }
+    .frog:nth-child(3) { animation-delay: -12s; font-size: 3rem; top: 30%; }
+    .frog:nth-child(4) { animation-delay: -18s; font-size: 2.2rem; }
+    .frog:nth-child(5) { animation-delay: -22s; font-size: 1.8rem; top: 60%; }
+
+    @keyframes float {
+      0% { transform: translateY(100vh) rotate(0deg); }
+      100% { transform: translateY(-100vh) rotate(360deg); }
     }
     
     .notepad {
@@ -44,11 +66,18 @@
 </head>
 <body class="pb-12">
 
+  <!-- Floating Frogs -->
+  <div class="frog" style="left: 10%;">🐸</div>
+  <div class="frog" style="left: 25%;">🐸</div>
+  <div class="frog" style="left: 45%;">🐸</div>
+  <div class="frog" style="left: 65%;">🐸</div>
+  <div class="frog" style="left: 85%;">🐸</div>
+
   <!-- Header -->
   <header class="text-center py-16 px-6">
     <div class="max-w-lg mx-auto">
-      <h1 class="text-6xl font-bold text-black mb-3 drop-shadow-sm">[Anxiety or Skye!]</h1>
-      <p class="text-3xl text-black">Pronouns: <span class="font-medium">[they/them]</span></p>
+      <h1 class="text-6xl font-bold text-black mb-3 drop-shadow-sm">Anxiety or Skye!</h1>
+      <p class="text-3xl text-black">Pronouns: <span class="font-medium">they/them</span></p>
       <p class="mt-6 text-xl text-black max-w-md mx-auto">Haii! I'm Anxiety. I'm non-binary and I love frogs! If you found this website, then you already know me from Discord, but feel free to DM me if you have any questions! ✨</p>
     </div>
   </header>
